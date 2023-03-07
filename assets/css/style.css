@@ -1,8 +1,5 @@
 :root {
 --eggshell: #EFEAD8;
---sage: #5F7161;
---smoke: #D0C9C0;
---pine: #6D8B74;
 --terracotta: #A75D5D;
 --clay: #D3756B;
 --tangerine: #F0997D;
@@ -10,20 +7,21 @@
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    font-family: Tahoma, sans-serif;
+    margin: 5px;
 }
 
 body {
     background-color: var(--terracotta);
     color: var(--tangerine);
+    transition: flex-basis 500ms linear;
 }
 
-header {
+header, footer {
     background-color: var(--clay);
     color: var(--paleyellow);
     display: flex;
-  justify-content: center;
+    justify-content: center;
 }
 
 header nav ul {
@@ -52,11 +50,36 @@ section {
 form {
     background-color: var(--paleyellow);
     color: var(--terracotta);
+    display: column;
 }
 
-.aloha{}
+footer {
+    display: flex;
+    margin-top: 30%;
+    align-items: baseline;
+}
 
-.card {}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    outline: 1px solid var(--eggshell);
+}
+
+.card-small {
+    width: 100%;
+    border: 1px dashed white;
+    
+}
+
+.aloha{
+    color: var(--eggshell);
+}
 
 @media screen and (max-width: 992px) {
     header, main {
