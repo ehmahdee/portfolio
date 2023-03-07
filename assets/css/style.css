@@ -39,7 +39,7 @@ justify-self: center;
 }
 
 main {
-    display: flex
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -55,8 +55,7 @@ form {
 
 footer {
     display: flex;
-    margin-top: 30%;
-    align-items: baseline;
+    margin-top: 10%;
 }
 
 .container {
@@ -67,14 +66,26 @@ footer {
 }
 
 .card {
-    width: 300px;
+    flex: 1 0 100%;
     outline: 1px solid var(--eggshell);
 }
 
 .card-small {
     width: 100%;
-    border: 1px dashed white;
+    border: 1px dashed var(--eggshell);
     
+}
+
+.card-links {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--paleyellow);
+}
+
+
+.card::hover, .card-small::hover {
+    box-shadow: inset 0px 0px 8px blue, 0 0 15px blue;
 }
 
 .aloha{
