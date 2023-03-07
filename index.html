@@ -3,10 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Snippet Cheatsheet</title>
+    <title>Emma Daily's Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body></body>
+  <body>
+    
+    <header>
+      <h1>Aloha!</h1>
+      <h1>I'm Emma. Welcome to my Portfolio!</h1>
+      <nav>
+        <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#my-work">My Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      
+      <section id="about-me">
+        <div>
+          <h2>About Me</h2>
+        </div>
+      </section>
+      
+      <section id="my-work">
+        <div>
+          <h2>My Work</h2>
+            <h3>Surf Report</h3>
+            <h3>LED Wall</h3>
+            <h3>Calculator</h3>
+            <h3>Pastel Puzzles</h3>
+            <h3>Run Buddy</h3>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <h2>Let's talk!</h2>
+        <form
+          id="contact_form"
+          action="#"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="row">
+            <label class="required" for="name">Your name:</label><br />
+            <input
+              id="name"
+              class="input"
+              name="name"
+              type="text"
+              value=""
+              size="30"
+            /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email">Your email:</label><br />
+            <input
+              id="email"
+              class="input"
+              name="email"
+              type="text"
+              value=""
+              size="30"
+            /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea
+              id="message"
+              class="input"
+              name="message"
+              rows="7"
+              cols="30"
+            ></textarea
+            ><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+          <input id="submit_button" type="submit" value="Send email" />
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer>I'm excited to connect.</footer>
+
+  </body>
+
 </html>

@@ -1,0 +1,90 @@
+:root {
+--eggshell: #EFEAD8;
+--sage: #5F7161;
+--smoke: #D0C9C0;
+--pine: #6D8B74;
+--terracotta: #A75D5D;
+--clay: #D3756B;
+--tangerine: #F0997D;
+--paleyellow: #FFC3A1;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+body {
+    background-color: var(--terracotta);
+    color: var(--tangerine);
+}
+
+header {
+    background-color: var(--clay);
+    color: var(--paleyellow);
+    display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--paleyellow);
+}
+
+h1 {
+justify-self: center;
+}
+
+main {
+    display: flex
+    justify-content: flex-end;
+}
+
+section {
+
+}
+
+form {
+    background-color: var(--paleyellow);
+    color: var(--terracotta);
+}
+
+.aloha{}
+
+.card {}
+
+@media screen and (max-width: 992px) {
+    header, main {
+        flex-direction: column;
+    }
+
+    div {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header, main {
+        flex-direction: column;
+    }
+
+    div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header, main {
+        flex-direction: column;
+    }
+
+    div {
+        flex-direction: column;
+    }
+}
