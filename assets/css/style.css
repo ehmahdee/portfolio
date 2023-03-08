@@ -32,26 +32,30 @@ header, footer {
 
 header {
     font-size: 40px;
+    height: 90vh;
 }
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    justify-content: flex-end;
+nav {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--paleyellow);
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    color: var(--paleyellow);
+nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    color: var(--terracotta);
 }
 
 h1 {
 justify-self: center;
+margin-left: 10px;
+margin-right: 5px;
 }
 
 main {
@@ -59,7 +63,8 @@ main {
     justify-content: flex-end;
 }
 
-section {
+p {
+    font-size: 55px;
 
 }
 
@@ -105,6 +110,8 @@ footer {
 .my-work {
     background-color: var(--terracotta);
     color: var(--paleyellow);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .links {
@@ -123,25 +130,24 @@ footer {
 }
 
 .card-small {
-    width: 100%;
+    width: 50%;
+    flex: 1 0 50%;
     border: 1px dashed var(--eggshell);
     
 }
 
 .card-links {
     list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
+    display: flex;
+    justify-content: flex-start;
     color: var(--paleyellow);
-}
-
-
-.card::hover, .card-small::hover {
-    box-shadow: inset 0px 0px 8px blue, 0 0 15px blue;
+    font-size: 50px;
 }
 
 .aloha{
     color: var(--eggshell);
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 992px) {
