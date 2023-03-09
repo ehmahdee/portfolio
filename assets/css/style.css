@@ -42,20 +42,32 @@ nav {
     background-color: var(--paleyellow);
 }
 
+nav a {
+    color: var(--terracotta);
+}
+
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav ul li {
-    display: inline-flex;
-    justify-content: center;
+    font-size: 50px;
     color: var(--terracotta);
 }
 
 h1 {
-justify-self: center;
-margin-left: 10px;
-margin-right: 5px;
+margin-left: 15px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0 10px 0 10px;
+}
+
+h3{
+    font-size: 25px;
 }
 
 main {
@@ -64,8 +76,14 @@ main {
 }
 
 p {
-    font-size: 55px;
+    font-size: 50px;
+    margin: 0 10px 0 10px;
 
+}
+
+a {
+    color: var(--paleyellow);
+    text-decoration: none;
 }
 
 img {
@@ -85,8 +103,20 @@ footer {
     font-size: 100px;
 }
 
-/* this will be the class to align the avatar icon in my header/splash. */
-.avatar {}
+.footer{
+    text-align: center;
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.avatar {
+    margin-right: 60px;
+    height: 700px;
+    width: 700px;
+}
 
 .container {
     display: flex;
@@ -100,6 +130,8 @@ footer {
     height: 100vh;
     width: 100vw;
     margin: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .about-me {
@@ -108,38 +140,46 @@ footer {
 }
 
 .my-work {
-    background-color: var(--terracotta);
+    background-color: var(--tangerine);
     color: var(--paleyellow);
-    display: flex;
     flex-wrap: wrap;
 }
 
 .links {
-    background-color: var(--tangerine);
-    color: var(--terracotta);
+    background-color: var(--terracotta);
+    color: var(--tangerine);
+}
+
+.links-h2{
+    font-size: 100px;
+    text-align: left;
 }
 
 .contact {
-    background-color: var(--paleyellow);
+    background-color: var(--terracotta);
     color: var(--tangerine);
 }
 
 .card {
     flex: 1 0 100%;
+    text-align: center;
     outline: 1px solid var(--eggshell);
 }
 
 .card-small {
     width: 50%;
+    text-align: center;
     flex: 1 0 50%;
-    border: 1px dashed var(--eggshell);
+    border: 1px solid var(--eggshell);
     
 }
 
 .card-links {
     list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
+    display: column;
+    margin:auto;
+    justify-content: flex-end space-around;
+    align-items: center;
     color: var(--paleyellow);
     font-size: 50px;
 }
@@ -148,6 +188,14 @@ footer {
     color: var(--eggshell);
     margin-left: 5px;
     margin-right: 10px;
+}
+
+.headerdiv {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 992px) {

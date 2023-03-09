@@ -8,69 +8,80 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body>
-    
+  <body id="top">
     <header>
-      <h1 class="aloha">Aloha!</h1>
-      <h1>I'm Emma. Welcome to my Portfolio!</h1>
-      
+      <div class="headerdiv">
+        <div>
+          <h1 class="aloha">Aloha!</h1>
+          <h1>I'm Emma. I'm a fullstack developer!</h1>
+        </div>
+        <img
+          class="avatar"
+          src="./assets/images/transparent-noshoulders-headshot-lineart.png"
+        />
+      </div>
     </header>
 
     <nav>
       <ul>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#my-work">My Work</a></li>
-      <li><a href="#links">Links</a></li>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#my-work">My Work</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#bottom">Bottom</a></li>
       </ul>
     </nav>
-    
-    <main class="container">
-      
+
+    <main class="container scroll-container">
       <section class="about-me" id="about-me">
         <div>
           <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad vero quisquam soluta perferendis qui. Ratione fugit corporis mollitia blanditiis, unde labore dolorem quam consequatur, quasi saepe at quod error!</p>
+          <p>
+            Born and raised on the island of Oahu in the heart of Honolulu, Emma Daily has always been inspired by the diverse stories hidden away in everyday communities. After taking psychology and counseling courses in high school, she enrolled in the film program at the University of Hawai'i at Manoa. Emma is excited and driven by the discoveries that film reveals, connecting to others in a way that only media and film allow. A puzzle lover at heart, she welcomes opportunities to creatively problem-solve.
+          </p>
         </div>
       </section>
-      
+
       <section class="my-work" id="my-work">
-          <h2>My Work</h2>
-            <div class="card">
-              <h3>Surf Report</h3>
-              <img src="./assets/images/surf.png"/>
-            </div>
-            <div class="card-small">
-              <h3>LED Wall</h3>
-              <img src="./assets/images/Hexagons.jpg"/>
-            </div>
-            <div class="card-small">
-              <h3>Calculator</h3>
-              <img src="./assets/images/Calculator.png">
-            </div>
-            <div class="card-small">
-              <h3>Pastel Puzzles</h3>
-              <img src="./assets/images/puzzle.png"/>
-            </div>
-            <div class="card-small">
-              <h3>Run Buddy</h3>
-              <img src="./assets/images/runningshoe.png">
-            </div>
+        <h2>My Work</h2>
+        <div class="card">
+          <h3>Surf Report</h3>
+          <img src="./assets/images/surf.png" />
+        </div>
+        <div class="card-small">
+          <h3>LED Wall</h3>
+          <img src="./assets/images/Hexagons.jpg" />
+        </div>
+        <div class="card-small">
+          <h3>Calculator</h3>
+          <img src="./assets/images/Calculator.png" />
+        </div>
+        <div class="card-small">
+          <h3>Pastel Puzzles</h3>
+          <img src="./assets/images/puzzle.png" />
+        </div>
+        <div class="card-small">
+          <h3>Run Buddy</h3>
+          <img src="./assets/images/runningshoe.png" />
+        </div>
       </section>
       <section class="links" id="links">
-        <div class="card-links">
-          <h2>Find me here:</h2>
-          <ul>
+        <div>
+          <h2 class="links-h2">Find me here:</h2>
+          <ul class="card-links">
+            <li>(808)393-5473</li>
             <li><a href="https://github.com/ehmahdee">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/emmaedaily/">LinkedIn</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/emmaedaily/">LinkedIn</a>
+            </li>
             <li><a href="mailto:edaily94@gmail.com">Email</a></li>
           </ul>
         </div>
       </section>
-
     </main>
 
-    <footer>Thanks for visiting! I hope we connect soon.</footer>
-
+    <footer id="bottom">
+      <div class="footer">Thanks for visiting! I hope we connect soon.</div>
+    </footer>
   </body>
-
 </html>
